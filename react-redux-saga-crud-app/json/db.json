@@ -1,0 +1,23 @@
+{
+    "Songs":[
+        {
+            "id":"123",
+            "Title":"Masinko",
+            "Artist":"Tedy Afro",
+            "year":"2006"
+        },
+        {
+            "id":"345",
+            "Title":"Tzita",
+            "Artist":"Aster",
+            "year":"2007"
+        },
+        {
+            "id":"768",
+            "Title":"Abebayehush",
+            "Artist":"Tamirat",
+            "year":"2005"
+        }
+
+    ]
+}
