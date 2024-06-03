@@ -14,14 +14,16 @@ const songs = createSlice({
             return state
         },
         addSongSlice: (state, action) => {
+           
             state.push(action.payload)
             return state
         },
         editSongSlice: (state, action) => {
-            state = state.map(i => i.id == action.payload.id ? action.payload : i)
+            state = state.map(i => i.id === action.payload.id ? action.payload : i)
             return state
         },
         deleteSongSlice: (state, action) => {
+           // console.log("deleted")
             state = state.filter(i => i.id !== action.payload)
             return state
         }

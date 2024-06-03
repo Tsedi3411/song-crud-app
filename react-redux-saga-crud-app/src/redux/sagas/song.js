@@ -3,6 +3,8 @@ import { setSongSlice } from '../slice/song'
 import { addSongSlice, deleteSongSlice, editSongSlice, getSongsSlice } from '../slice/songs'
 import { CREATE_SONG, DELETE_SONG_BY_ID, GET_SONGS, GET_SONG_BY_ID, UPDATE_SONG_BY_ID } from '../types'
 import { put, takeEvery } from 'redux-saga/effects'
+
+
 export function* getSongsSaga() {
     const Songs = yield getSongsAPI()
     yield put(getSongsSlice(Songs.data))
@@ -13,13 +15,13 @@ export function* getSongByIdSaga(action) {
     yield put(setSongSlice(action.id))
 }
 export function* createSongSaga(action) {
-    yield createSongAPI(action.user)
-    yield put(addSongSlice(action.user))
+    yield createSongAPI(action.song)
+    yield put(addSongSlice(action.song))
 }
 
 export function* updateSongSaga(action) {
-    yield updateSongAPI(action.user)
-    yield put(editSongSlice(action.user))
+    yield updateSongAPI(action.song)
+    yield put(editSongSlice(action.song))
 }
 
 export function* deleteSongByIdSaga(action) {

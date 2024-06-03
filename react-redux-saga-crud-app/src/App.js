@@ -35,7 +35,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 
 const pages = ['Song', 'App'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const settings = ['New', 'Old', 'Account', 'Logout'];
 
 const App = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);

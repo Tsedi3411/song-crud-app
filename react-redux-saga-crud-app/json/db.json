@@ -1,23 +1,28 @@
 {
-    "Songs":[
-        {
-            "id":"123",
-            "Title":"Masinko",
-            "Artist":"Tedy Afro",
-            "year":"2006"
-        },
-        {
-            "id":"345",
-            "Title":"Tzita",
-            "Artist":"Aster",
-            "year":"2007"
-        },
-        {
-            "id":"768",
-            "Title":"Abebayehush",
-            "Artist":"Tamirat",
-            "year":"2005"
-        }
-
-    ]
+  "Songs": [
+    {
+      "id": "u6rTh6D2",
+      "title": "ambasel",
+      "artist": "fantu Mandoye",
+      "year": "2024"
+    },
+    {
+      "id": "qGUYIz6g",
+      "title": "Bole",
+      "artist": "Rophnan",
+      "year": "2024"
+    },
+    {
+      "id": "d4bCigLv",
+      "title": "anchihoye",
+      "artist": "tilahun",
+      "year": "2014"
+    },
+    {
+      "id": "QdMsLBkJ",
+      "title": "myLove",
+      "artist": "selena",
+      "year": "2020"
+    }
+  ]
 }

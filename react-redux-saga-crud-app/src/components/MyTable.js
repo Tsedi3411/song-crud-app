@@ -8,9 +8,14 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { useDispatch, useSelector } from 'react-redux';
 import { setSongSlice } from '../redux/slice/song';
-import { deleteSongsSlice } from '../redux/slice/songs';
+import { deleteSongSlice } from '../redux/slice/songs';
 import Button from '@mui/material/Button';
 import { DELETE_SONG_BY_ID, GET_SONGS} from '../redux/types';
+
+
+
+
+
 
 export default function MyTable() {
     const rows = useSelector(state => state.songs)
@@ -40,10 +45,10 @@ export default function MyTable() {
                             <TableCell align="right">{row.artist}</TableCell>
                             <TableCell align="right">{row.year}</TableCell>
                             <TableCell align="right">
-                                <Button onClick={() => dispatch(setSongSlice(row))} fullWidth variant="contained">Edit</Button>;
+                                <Button onClick={() => dispatch(setSongSlice(row))} fullWidth variant="contained">Edit</Button>
                             </TableCell>
                             <TableCell align="right">
-                                <Button onClick={() => dispatch({ type: DELETE_SONG_BY_ID, id: row.id })} fullWidth variant="contained">Delete</Button>;
+                                <Button onClick={() => dispatch({ type: DELETE_SONG_BY_ID, id: row.id })} fullWidth variant="contained">Delete</Button>
                             </TableCell>
                         </TableRow>
                     ))}
